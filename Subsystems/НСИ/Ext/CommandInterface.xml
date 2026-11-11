@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ВариантыЗначенияХарактеристик.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.Файлы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ПроизводственныйКалендарь.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.СтавкиСотрудников.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccountingRegister.БухгалтерскиеПроводки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВидыРасчета.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыСубконто.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="ChartOfAccounts.ПланыСчетовБухгалтерии.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ВариантыЗначенияХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.Файлы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ПроизводственныйКалендарь.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.СтавкиСотрудников.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccountingRegister.БухгалтерскиеПроводки.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВидыРасчета.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыСубконто.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="ChartOfAccounts.ПланыСчетовБухгалтерии.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Отчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="Catalog.ВариантыЗначенияХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.Файлы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПроизводственныйКалендарь.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.СтавкиСотрудников.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.УчетныеДанные</CommandGroup>
+		</Command>
+		<Command name="AccountingRegister.БухгалтерскиеПроводки.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+		</Command>
+		<Command name="ChartOfCalculationTypes.ВидыРасчета.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+		</Command>
+		<Command name="ChartOfCharacteristicTypes.ВидыСубконто.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+		</Command>
+		<Command name="ChartOfAccounts.ПланыСчетовБухгалтерии.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ПроизводственныеОперации</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Отчеты</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.УчетныеДанные</Group>
+		<Group>CommandGroup.ПроизводственныеОперации</Group>
+		<Group>CommandGroup.Отчеты</Group>
+	</GroupsOrder>
+</CommandInterface>

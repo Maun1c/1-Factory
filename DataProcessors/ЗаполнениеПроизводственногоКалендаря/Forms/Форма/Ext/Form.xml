@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ЗагрузитьДанныеКалендаря" id="39">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьДанныеКалендаря</CommandName>
+				<ExtendedTooltip name="ЗагрузитьДанныеКалендаряРасширеннаяПодсказка" id="40"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Период" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="1">
+					<DataPath>Объект.ДатаНачала</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="4">
+					<DataPath>Объект.ДатаОкончания</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НормаЧасов" id="7">
+			<DataPath>Объект.НормаЧасов</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НормаЧасовКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НормаЧасовРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="Дни" id="10">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Дни</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДниКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ДниКоманднаяПанель" id="12">
+				<ChildItems>
+					<Button name="ЗаполнитьСписокДней" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьСписокДней</CommandName>
+						<ExtendedTooltip name="ЗаполнитьСписокДнейРасширеннаяПодсказка" id="38"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДниРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ДниСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Дни</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДниСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДниСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДниСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Дни</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДниСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ДниСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДниУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Дни</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДниУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ДниУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДниНомерСтроки" id="23">
+					<DataPath>Объект.Дни.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДниНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДниНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ДниДата" id="26">
+					<DataPath>Объект.Дни.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДниДатаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДниДатаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<CheckBoxField name="ДниРабочий" id="29">
+					<DataPath>Объект.Дни.Рабочий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДниРабочийКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДниРабочийРасширеннаяПодсказка" id="31"/>
+				</CheckBoxField>
+				<InputField name="ДниКоличествоЧасов" id="32">
+					<DataPath>Объект.Дни.КоличествоЧасов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДниКоличествоЧасовКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДниКоличествоЧасовРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаполнениеПроизводственногоКалендаря</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьСписокДней" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список дней</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список дней</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСписокДней</Action>
+		</Command>
+		<Command name="ЗагрузитьДанныеКалендаря" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные календаря</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные календаря</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеКалендаря</Action>
+		</Command>
+	</Commands>
+</Form>
